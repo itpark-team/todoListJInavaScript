@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SimplestTodoList</title>
+
+    <link rel="stylesheet" href="bootstrap-5.0/css/bootstrap.css">
+    <script src="bootstrap-5.0/js/bootstrap.bundle.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="vh-100" style="background-color: #eee;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-lg-9 col-xl-7">
+                <div class="card rounded-3">
+                    <div class="card-body p-4">
+
+                        <h4 class="text-center my-3 pb-3">Планировщик задач</h4>
+
+                        <div class="row justify-content-center align-items-center mb-4 pb-2">
+                            <div class="col-lg-4">
+                                <input type="date" id="input-date-field" class="form-control"/>
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="text" id="input-task-field" class="form-control"
+                                       placeholder="Введите задачу здесь"/>
+                            </div>
+                            <div class="col-lg-2">
+                                <button type="submit" class="btn btn-primary" onclick="buttonAddTodoItem_Click()">Сохранить</button>
+                            </div>
+                        </div>
+
+                        <div id="table-tasks-div">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
